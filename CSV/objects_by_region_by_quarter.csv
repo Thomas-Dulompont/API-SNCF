@@ -1,0 +1,289 @@
+,region,date,n
+0,Auvergne-Rhône-Alpes,2016-03-31,1984
+1,Auvergne-Rhône-Alpes,2016-06-30,1940
+2,Auvergne-Rhône-Alpes,2016-09-30,2187
+3,Auvergne-Rhône-Alpes,2016-12-31,2058
+4,Auvergne-Rhône-Alpes,2017-03-31,2264
+5,Auvergne-Rhône-Alpes,2017-06-30,2129
+6,Auvergne-Rhône-Alpes,2017-09-30,1889
+7,Auvergne-Rhône-Alpes,2017-12-31,1860
+8,Auvergne-Rhône-Alpes,2018-03-31,1883
+9,Auvergne-Rhône-Alpes,2018-06-30,1186
+10,Auvergne-Rhône-Alpes,2018-09-30,1540
+11,Auvergne-Rhône-Alpes,2018-12-31,1732
+12,Auvergne-Rhône-Alpes,2019-03-31,1878
+13,Auvergne-Rhône-Alpes,2019-06-30,1667
+14,Auvergne-Rhône-Alpes,2019-09-30,1730
+15,Auvergne-Rhône-Alpes,2019-12-31,1431
+16,Auvergne-Rhône-Alpes,2020-03-31,1478
+17,Auvergne-Rhône-Alpes,2020-06-30,354
+18,Auvergne-Rhône-Alpes,2020-09-30,1112
+19,Auvergne-Rhône-Alpes,2020-12-31,794
+20,Auvergne-Rhône-Alpes,2021-03-31,912
+21,Auvergne-Rhône-Alpes,2021-06-30,952
+22,Auvergne-Rhône-Alpes,2021-09-30,1278
+23,Auvergne-Rhône-Alpes,2021-12-31,1412
+24,Bourgogne-Franche-Comté,2016-03-31,336
+25,Bourgogne-Franche-Comté,2016-06-30,404
+26,Bourgogne-Franche-Comté,2016-09-30,419
+27,Bourgogne-Franche-Comté,2016-12-31,348
+28,Bourgogne-Franche-Comté,2017-03-31,301
+29,Bourgogne-Franche-Comté,2017-06-30,391
+30,Bourgogne-Franche-Comté,2017-09-30,466
+31,Bourgogne-Franche-Comté,2017-12-31,472
+32,Bourgogne-Franche-Comté,2018-03-31,400
+33,Bourgogne-Franche-Comté,2018-06-30,308
+34,Bourgogne-Franche-Comté,2018-09-30,339
+35,Bourgogne-Franche-Comté,2018-12-31,396
+36,Bourgogne-Franche-Comté,2019-03-31,311
+37,Bourgogne-Franche-Comté,2019-06-30,352
+38,Bourgogne-Franche-Comté,2019-09-30,387
+39,Bourgogne-Franche-Comté,2019-12-31,276
+40,Bourgogne-Franche-Comté,2020-03-31,226
+41,Bourgogne-Franche-Comté,2020-06-30,69
+42,Bourgogne-Franche-Comté,2020-09-30,282
+43,Bourgogne-Franche-Comté,2020-12-31,235
+44,Bourgogne-Franche-Comté,2021-03-31,219
+45,Bourgogne-Franche-Comté,2021-06-30,200
+46,Bourgogne-Franche-Comté,2021-09-30,270
+47,Bourgogne-Franche-Comté,2021-12-31,328
+48,Bretagne,2016-03-31,547
+49,Bretagne,2016-06-30,459
+50,Bretagne,2016-09-30,681
+51,Bretagne,2016-12-31,549
+52,Bretagne,2017-03-31,469
+53,Bretagne,2017-06-30,539
+54,Bretagne,2017-09-30,698
+55,Bretagne,2017-12-31,546
+56,Bretagne,2018-03-31,573
+57,Bretagne,2018-06-30,306
+58,Bretagne,2018-09-30,657
+59,Bretagne,2018-12-31,543
+60,Bretagne,2019-03-31,477
+61,Bretagne,2019-06-30,583
+62,Bretagne,2019-09-30,604
+63,Bretagne,2019-12-31,333
+64,Bretagne,2020-03-31,337
+65,Bretagne,2020-06-30,170
+66,Bretagne,2020-09-30,439
+67,Bretagne,2020-12-31,314
+68,Bretagne,2021-03-31,253
+69,Bretagne,2021-06-30,297
+70,Bretagne,2021-09-30,541
+71,Bretagne,2021-12-31,506
+72,Centre-Val de Loire,2016-03-31,499
+73,Centre-Val de Loire,2016-06-30,496
+74,Centre-Val de Loire,2016-09-30,516
+75,Centre-Val de Loire,2016-12-31,528
+76,Centre-Val de Loire,2017-03-31,541
+77,Centre-Val de Loire,2017-06-30,578
+78,Centre-Val de Loire,2017-09-30,474
+79,Centre-Val de Loire,2017-12-31,474
+80,Centre-Val de Loire,2018-03-31,477
+81,Centre-Val de Loire,2018-06-30,328
+82,Centre-Val de Loire,2018-09-30,435
+83,Centre-Val de Loire,2018-12-31,476
+84,Centre-Val de Loire,2019-03-31,456
+85,Centre-Val de Loire,2019-06-30,495
+86,Centre-Val de Loire,2019-09-30,435
+87,Centre-Val de Loire,2019-12-31,388
+88,Centre-Val de Loire,2020-03-31,308
+89,Centre-Val de Loire,2020-06-30,102
+90,Centre-Val de Loire,2020-09-30,293
+91,Centre-Val de Loire,2020-12-31,210
+92,Centre-Val de Loire,2021-03-31,286
+93,Centre-Val de Loire,2021-06-30,252
+94,Centre-Val de Loire,2021-09-30,406
+95,Centre-Val de Loire,2021-12-31,447
+96,Grand Est,2016-03-31,876
+97,Grand Est,2016-06-30,856
+98,Grand Est,2016-09-30,915
+99,Grand Est,2016-12-31,898
+100,Grand Est,2017-03-31,1003
+101,Grand Est,2017-06-30,979
+102,Grand Est,2017-09-30,966
+103,Grand Est,2017-12-31,1013
+104,Grand Est,2018-03-31,986
+105,Grand Est,2018-06-30,807
+106,Grand Est,2018-09-30,961
+107,Grand Est,2018-12-31,1152
+108,Grand Est,2019-03-31,1009
+109,Grand Est,2019-06-30,1087
+110,Grand Est,2019-09-30,968
+111,Grand Est,2019-12-31,969
+112,Grand Est,2020-03-31,643
+113,Grand Est,2020-06-30,173
+114,Grand Est,2020-09-30,711
+115,Grand Est,2020-12-31,533
+116,Grand Est,2021-03-31,541
+117,Grand Est,2021-06-30,577
+118,Grand Est,2021-09-30,790
+119,Grand Est,2021-12-31,708
+120,Hauts-de-France,2016-03-31,1468
+121,Hauts-de-France,2016-06-30,1514
+122,Hauts-de-France,2016-09-30,1560
+123,Hauts-de-France,2016-12-31,1627
+124,Hauts-de-France,2017-03-31,1577
+125,Hauts-de-France,2017-06-30,1622
+126,Hauts-de-France,2017-09-30,1668
+127,Hauts-de-France,2017-12-31,1794
+128,Hauts-de-France,2018-03-31,1645
+129,Hauts-de-France,2018-06-30,1318
+130,Hauts-de-France,2018-09-30,1703
+131,Hauts-de-France,2018-12-31,1338
+132,Hauts-de-France,2019-03-31,1119
+133,Hauts-de-France,2019-06-30,1239
+134,Hauts-de-France,2019-09-30,1200
+135,Hauts-de-France,2019-12-31,1046
+136,Hauts-de-France,2020-03-31,730
+137,Hauts-de-France,2020-06-30,237
+138,Hauts-de-France,2020-09-30,801
+139,Hauts-de-France,2020-12-31,545
+140,Hauts-de-France,2021-03-31,609
+141,Hauts-de-France,2021-06-30,630
+142,Hauts-de-France,2021-09-30,881
+143,Hauts-de-France,2021-12-31,925
+144,Normandie,2016-03-31,579
+145,Normandie,2016-06-30,679
+146,Normandie,2016-09-30,697
+147,Normandie,2016-12-31,639
+148,Normandie,2017-03-31,591
+149,Normandie,2017-06-30,687
+150,Normandie,2017-09-30,574
+151,Normandie,2017-12-31,493
+152,Normandie,2018-03-31,442
+153,Normandie,2018-06-30,382
+154,Normandie,2018-09-30,527
+155,Normandie,2018-12-31,536
+156,Normandie,2019-03-31,457
+157,Normandie,2019-06-30,435
+158,Normandie,2019-09-30,521
+159,Normandie,2019-12-31,426
+160,Normandie,2020-03-31,187
+161,Normandie,2020-06-30,83
+162,Normandie,2020-09-30,352
+163,Normandie,2020-12-31,192
+164,Normandie,2021-03-31,173
+165,Normandie,2021-06-30,213
+166,Normandie,2021-09-30,320
+167,Normandie,2021-12-31,306
+168,Nouvelle-Aquitaine,2016-03-31,1255
+169,Nouvelle-Aquitaine,2016-06-30,1397
+170,Nouvelle-Aquitaine,2016-09-30,1826
+171,Nouvelle-Aquitaine,2016-12-31,1614
+172,Nouvelle-Aquitaine,2017-03-31,1531
+173,Nouvelle-Aquitaine,2017-06-30,1751
+174,Nouvelle-Aquitaine,2017-09-30,2274
+175,Nouvelle-Aquitaine,2017-12-31,1777
+176,Nouvelle-Aquitaine,2018-03-31,1665
+177,Nouvelle-Aquitaine,2018-06-30,1516
+178,Nouvelle-Aquitaine,2018-09-30,2401
+179,Nouvelle-Aquitaine,2018-12-31,2074
+180,Nouvelle-Aquitaine,2019-03-31,1863
+181,Nouvelle-Aquitaine,2019-06-30,2115
+182,Nouvelle-Aquitaine,2019-09-30,2399
+183,Nouvelle-Aquitaine,2019-12-31,1584
+184,Nouvelle-Aquitaine,2020-03-31,1339
+185,Nouvelle-Aquitaine,2020-06-30,402
+186,Nouvelle-Aquitaine,2020-09-30,1866
+187,Nouvelle-Aquitaine,2020-12-31,1039
+188,Nouvelle-Aquitaine,2021-03-31,1027
+189,Nouvelle-Aquitaine,2021-06-30,1208
+190,Nouvelle-Aquitaine,2021-09-30,2241
+191,Nouvelle-Aquitaine,2021-12-31,1633
+192,Occitanie,2016-03-31,690
+193,Occitanie,2016-06-30,836
+194,Occitanie,2016-09-30,1056
+195,Occitanie,2016-12-31,774
+196,Occitanie,2017-03-31,719
+197,Occitanie,2017-06-30,839
+198,Occitanie,2017-09-30,939
+199,Occitanie,2017-12-31,722
+200,Occitanie,2018-03-31,643
+201,Occitanie,2018-06-30,535
+202,Occitanie,2018-09-30,910
+203,Occitanie,2018-12-31,682
+204,Occitanie,2019-03-31,516
+205,Occitanie,2019-06-30,684
+206,Occitanie,2019-09-30,843
+207,Occitanie,2019-12-31,494
+208,Occitanie,2020-03-31,532
+209,Occitanie,2020-06-30,145
+210,Occitanie,2020-09-30,629
+211,Occitanie,2020-12-31,392
+212,Occitanie,2021-03-31,404
+213,Occitanie,2021-06-30,540
+214,Occitanie,2021-09-30,785
+215,Occitanie,2021-12-31,674
+216,Pays de la Loire,2016-03-31,843
+217,Pays de la Loire,2016-06-30,1016
+218,Pays de la Loire,2016-09-30,1726
+219,Pays de la Loire,2016-12-31,1467
+220,Pays de la Loire,2017-03-31,1327
+221,Pays de la Loire,2017-06-30,1374
+222,Pays de la Loire,2017-09-30,1508
+223,Pays de la Loire,2017-12-31,1447
+224,Pays de la Loire,2018-03-31,1136
+225,Pays de la Loire,2018-06-30,1060
+226,Pays de la Loire,2018-09-30,1409
+227,Pays de la Loire,2018-12-31,1295
+228,Pays de la Loire,2019-03-31,1059
+229,Pays de la Loire,2019-06-30,1163
+230,Pays de la Loire,2019-09-30,1359
+231,Pays de la Loire,2019-12-31,759
+232,Pays de la Loire,2020-03-31,774
+233,Pays de la Loire,2020-06-30,197
+234,Pays de la Loire,2020-09-30,800
+235,Pays de la Loire,2020-12-31,592
+236,Pays de la Loire,2021-03-31,592
+237,Pays de la Loire,2021-06-30,619
+238,Pays de la Loire,2021-09-30,736
+239,Pays de la Loire,2021-12-31,828
+240,Provence-Alpes-Côte d'Azur,2016-03-31,1515
+241,Provence-Alpes-Côte d'Azur,2016-06-30,2070
+242,Provence-Alpes-Côte d'Azur,2016-09-30,2428
+243,Provence-Alpes-Côte d'Azur,2016-12-31,1829
+244,Provence-Alpes-Côte d'Azur,2017-03-31,1579
+245,Provence-Alpes-Côte d'Azur,2017-06-30,1744
+246,Provence-Alpes-Côte d'Azur,2017-09-30,2183
+247,Provence-Alpes-Côte d'Azur,2017-12-31,1635
+248,Provence-Alpes-Côte d'Azur,2018-03-31,1576
+249,Provence-Alpes-Côte d'Azur,2018-06-30,1502
+250,Provence-Alpes-Côte d'Azur,2018-09-30,1914
+251,Provence-Alpes-Côte d'Azur,2018-12-31,1602
+252,Provence-Alpes-Côte d'Azur,2019-03-31,1365
+253,Provence-Alpes-Côte d'Azur,2019-06-30,1441
+254,Provence-Alpes-Côte d'Azur,2019-09-30,1772
+255,Provence-Alpes-Côte d'Azur,2019-12-31,1101
+256,Provence-Alpes-Côte d'Azur,2020-03-31,880
+257,Provence-Alpes-Côte d'Azur,2020-06-30,255
+258,Provence-Alpes-Côte d'Azur,2020-09-30,1255
+259,Provence-Alpes-Côte d'Azur,2020-12-31,738
+260,Provence-Alpes-Côte d'Azur,2021-03-31,804
+261,Provence-Alpes-Côte d'Azur,2021-06-30,1007
+262,Provence-Alpes-Côte d'Azur,2021-09-30,1403
+263,Provence-Alpes-Côte d'Azur,2021-12-31,960
+264,Île-de-France,2016-03-31,4903
+265,Île-de-France,2016-06-30,4944
+266,Île-de-France,2016-09-30,5056
+267,Île-de-France,2016-12-31,4497
+268,Île-de-France,2017-03-31,4468
+269,Île-de-France,2017-06-30,4570
+270,Île-de-France,2017-09-30,4905
+271,Île-de-France,2017-12-31,4631
+272,Île-de-France,2018-03-31,4382
+273,Île-de-France,2018-06-30,3758
+274,Île-de-France,2018-09-30,4740
+275,Île-de-France,2018-12-31,4343
+276,Île-de-France,2019-03-31,4179
+277,Île-de-France,2019-06-30,4465
+278,Île-de-France,2019-09-30,4826
+279,Île-de-France,2019-12-31,3813
+280,Île-de-France,2020-03-31,3185
+281,Île-de-France,2020-06-30,834
+282,Île-de-France,2020-09-30,2736
+283,Île-de-France,2020-12-31,1890
+284,Île-de-France,2021-03-31,1946
+285,Île-de-France,2021-06-30,2088
+286,Île-de-France,2021-09-30,3002
+287,Île-de-France,2021-12-31,3212

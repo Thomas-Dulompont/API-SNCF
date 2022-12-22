@@ -9,6 +9,7 @@ import json
 import pandas as pd
 from datetime import datetime
 from datetime import timedelta
+from dateutil.relativedelta import relativedelta
 ##########################################
 ##########################################
 
@@ -21,9 +22,9 @@ st.set_page_config(page_icon=":movie_camera:",
 #########################################
 #########################################
 
+objects_par_regions = pd.read_csv('CSV/objects_par_region.csv')
 
-df = pd.read_csv('CSV/liste_gares.csv')
-df1 = pd.read_csv('CSV/sncf_regions.csv')
+
 geo = json.load(open("GEOJSON/regions.geojson")) # lire les données 
 
 #########################################
@@ -31,40 +32,63 @@ geo = json.load(open("GEOJSON/regions.geojson")) # lire les données
 
 
 
-choice = st.selectbox('Search by :',('day', 'week'))
+choice = st.selectbox('Search by :',('day', 'week', 'quarter', 'month', 'year'))
 
 df_weather_by_choice = pd.read_csv(f"CSV/weather_by_dep_by_{choice}.csv")
+objet_region_by_choice = pd.read_csv(f'CSV/objects_by_region_by_{choice}.csv')
 
-df_departements_lat_mean = df_weather_by_choice['lat'].mean()
-df_departements_long_mean = df_weather_by_choice['long'].mean()
+df_departements_weather_by_choice_lat_mean = df_weather_by_choice['lat'].mean()
+df_departements_weather_by_choice_long_mean = df_weather_by_choice['long'].mean()
 
 #########################################
 #########################################
+
+
+
+
+
+options_dates = df_weather_by_choice['date'].unique()
+choosed_time = st.select_slider(
+    f"Choose your {choice}",
+    options=options_dates)
+
+st.write(choosed_time)
+
+
+#########################################
+#########################################
+
+
+df_objet_region_by_choice = objet_region_by_choice[objet_region_by_choice['date'] == choosed_time]
+df_objet_region_by_choice = df_objet_region_by_choice.fillna(df_objet_region_by_choice.mean())
 
 
 # initialize the map and store it in a m object
-m = folium.Map(location=[df_departements_lat_mean, df_departements_long_mean], zoom_start=5)
+m = folium.Map(location=[df_departements_weather_by_choice_lat_mean, df_departements_weather_by_choice_long_mean], zoom_start=5)
+folium.TileLayer('stamentoner').add_to(m) # Sets Tile Theme to (Dark Theme)
 folium.Choropleth(geo_data = geo).add_to(m)
 
 choropleth = folium.Choropleth(
     geo_data=geo,
     name="France departements",
-    data=df1,
-    columns=["region", "n_objets"],
+    data= df_objet_region_by_choice,
+    columns=["region", "n"],
     key_on="feature.properties.nom",
-    fill_color="YlGn",
+    fill_color="OrRd",  # for more colors : https://github.com/python-visualization/folium/blob/v0.2.0/folium/utilities.py#L104
+    nan_fill_color='white',
     fill_opacity=0.7,
     line_opacity=.1,
-    legend_name="Unemployment Rate (%)",
-)
-choropleth.geojson.add_to(m)
+    overlay=True,
+    legend_name="Lost items",
+).add_to(m)
+#choropleth.geojson.add_to(m)
 
 
 
-df_indexed = df1.set_index('region')
+df_indexed = df_objet_region_by_choice.set_index('region')
 for feature in choropleth.geojson.data['features']:
     state_name = feature['properties']['nom']
-    feature['properties']['Lost_objects'] = 'Objects Trouvés: ' + '{:,}'.format(df_indexed.loc[state_name, 'n_objets']) if state_name in list(df_indexed.index) else ''
+    feature['properties']['Lost_objects'] = 'Objects Trouvés: ' + '{:,}'.format(df_indexed.loc[state_name, 'n']) if state_name in list(df_indexed.index) else ''
     #feature['properties']['per_100k'] = 'Reports/100K Population: ' + str(round(df_indexed.loc[state_name, 'Reports per 100K-F&O together'][0])) if state_name in list(df_indexed.index) else ''
 
 choropleth.geojson.add_child(
@@ -80,29 +104,15 @@ choropleth.geojson.add_child(
 #########################################
 #########################################
 
-if choice == 'day': 
-    steps = timedelta(days=1)
-elif choice == "week":
-    steps = timedelta(weeks=1)
 
-start_time = st.slider(
-    f"Choose your {choice}",
-    value=datetime(2016, 12, 12),
-    min_value = datetime(2016,1,1),  
-    max_value=  datetime(2021,12,12), 
-    step= steps,
-    format="YYYY-DD-MM")
+df_weather_by_choice = df_weather_by_choice[df_weather_by_choice['date'] == choosed_time]
+df_departements_weather_by_choice = df_weather_by_choice[['lat',	'long'	,'tc']]
+df_departements_weather_by_choice = df_departements_weather_by_choice.fillna(df_departements_weather_by_choice.mean())
 
-st.write(str(start_time.date()))
-
-df_weather_by_choice = df_weather_by_choice[df_weather_by_choice['date'] == str(start_time.date())]
-df_departements = df_weather_by_choice[['lat',	'long'	,'tc']]
-df_departements = df_departements.fillna(df_departements.mean())
-
-hm = folium.Map(location=[df_departements_lat_mean, df_departements_long_mean], 
+hm = folium.Map(location=[df_departements_weather_by_choice_lat_mean, df_departements_weather_by_choice_long_mean], 
                tiles='stamentoner',
                zoom_start=5)
-HeatMap(df_departements, 
+HeatMap(df_departements_weather_by_choice, 
         min_opacity=0.4,
         blur = 18
                ).add_to(folium.FeatureGroup(name='Heat Map').add_to(hm))
