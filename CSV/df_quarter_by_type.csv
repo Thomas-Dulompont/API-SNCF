@@ -1,0 +1,385 @@
+date,type,nb_objets
+2016-03-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3165
+2016-03-31 00:00:00+00:00,"Articles d'enfants, de puériculture",282
+2016-03-31 00:00:00+00:00,"Articles de sport, loisirs, camping",211
+2016-03-31 00:00:00+00:00,Articles médicaux,120
+2016-03-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",6455
+2016-03-31 00:00:00+00:00,"Bijoux, montres",235
+2016-03-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1234
+2016-03-31 00:00:00+00:00,Divers,403
+2016-03-31 00:00:00+00:00,Instruments de musique,46
+2016-03-31 00:00:00+00:00,"Livres, articles de papéterie",608
+2016-03-31 00:00:00+00:00,Optique,1205
+2016-03-31 00:00:00+00:00,Parapluies,399
+2016-03-31 00:00:00+00:00,Pièces d'identités et papiers personnels,2143
+2016-03-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2508
+2016-03-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",218
+2016-03-31 00:00:00+00:00,"Vêtements, chaussures",2637
+2016-06-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3380
+2016-06-30 00:00:00+00:00,"Articles d'enfants, de puériculture",271
+2016-06-30 00:00:00+00:00,"Articles de sport, loisirs, camping",245
+2016-06-30 00:00:00+00:00,Articles médicaux,159
+2016-06-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",6292
+2016-06-30 00:00:00+00:00,"Bijoux, montres",237
+2016-06-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1234
+2016-06-30 00:00:00+00:00,Divers,460
+2016-06-30 00:00:00+00:00,Instruments de musique,67
+2016-06-30 00:00:00+00:00,"Livres, articles de papéterie",668
+2016-06-30 00:00:00+00:00,Optique,1504
+2016-06-30 00:00:00+00:00,Parapluies,409
+2016-06-30 00:00:00+00:00,Pièces d'identités et papiers personnels,2152
+2016-06-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2805
+2016-06-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",245
+2016-06-30 00:00:00+00:00,"Vêtements, chaussures",3117
+2016-09-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3678
+2016-09-30 00:00:00+00:00,"Articles d'enfants, de puériculture",363
+2016-09-30 00:00:00+00:00,"Articles de sport, loisirs, camping",497
+2016-09-30 00:00:00+00:00,Articles médicaux,200
+2016-09-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",6969
+2016-09-30 00:00:00+00:00,"Bijoux, montres",260
+2016-09-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1334
+2016-09-30 00:00:00+00:00,Divers,517
+2016-09-30 00:00:00+00:00,Instruments de musique,67
+2016-09-30 00:00:00+00:00,"Livres, articles de papéterie",647
+2016-09-30 00:00:00+00:00,Optique,1860
+2016-09-30 00:00:00+00:00,Parapluies,174
+2016-09-30 00:00:00+00:00,Pièces d'identités et papiers personnels,2288
+2016-09-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",3176
+2016-09-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",334
+2016-09-30 00:00:00+00:00,"Vêtements, chaussures",4090
+2016-12-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3369
+2016-12-31 00:00:00+00:00,"Articles d'enfants, de puériculture",311
+2016-12-31 00:00:00+00:00,"Articles de sport, loisirs, camping",190
+2016-12-31 00:00:00+00:00,Articles médicaux,142
+2016-12-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",7469
+2016-12-31 00:00:00+00:00,"Bijoux, montres",229
+2016-12-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1229
+2016-12-31 00:00:00+00:00,Divers,459
+2016-12-31 00:00:00+00:00,Instruments de musique,48
+2016-12-31 00:00:00+00:00,"Livres, articles de papéterie",667
+2016-12-31 00:00:00+00:00,Optique,1268
+2016-12-31 00:00:00+00:00,Parapluies,276
+2016-12-31 00:00:00+00:00,Pièces d'identités et papiers personnels,2150
+2016-12-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2960
+2016-12-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",231
+2016-12-31 00:00:00+00:00,"Vêtements, chaussures",2979
+2017-03-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3373
+2017-03-31 00:00:00+00:00,"Articles d'enfants, de puériculture",239
+2017-03-31 00:00:00+00:00,"Articles de sport, loisirs, camping",200
+2017-03-31 00:00:00+00:00,Articles médicaux,134
+2017-03-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",6931
+2017-03-31 00:00:00+00:00,"Bijoux, montres",226
+2017-03-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1096
+2017-03-31 00:00:00+00:00,Divers,399
+2017-03-31 00:00:00+00:00,Instruments de musique,62
+2017-03-31 00:00:00+00:00,"Livres, articles de papéterie",696
+2017-03-31 00:00:00+00:00,Optique,1196
+2017-03-31 00:00:00+00:00,Parapluies,314
+2017-03-31 00:00:00+00:00,Pièces d'identités et papiers personnels,2174
+2017-03-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2771
+2017-03-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",262
+2017-03-31 00:00:00+00:00,"Vêtements, chaussures",2796
+2017-06-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3782
+2017-06-30 00:00:00+00:00,"Articles d'enfants, de puériculture",280
+2017-06-30 00:00:00+00:00,"Articles de sport, loisirs, camping",288
+2017-06-30 00:00:00+00:00,Articles médicaux,159
+2017-06-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",6711
+2017-06-30 00:00:00+00:00,"Bijoux, montres",219
+2017-06-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1259
+2017-06-30 00:00:00+00:00,Divers,392
+2017-06-30 00:00:00+00:00,Instruments de musique,49
+2017-06-30 00:00:00+00:00,"Livres, articles de papéterie",643
+2017-06-30 00:00:00+00:00,Optique,1712
+2017-06-30 00:00:00+00:00,Parapluies,219
+2017-06-30 00:00:00+00:00,Pièces d'identités et papiers personnels,2044
+2017-06-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",3089
+2017-06-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",373
+2017-06-30 00:00:00+00:00,"Vêtements, chaussures",3443
+2017-09-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3563
+2017-09-30 00:00:00+00:00,"Articles d'enfants, de puériculture",349
+2017-09-30 00:00:00+00:00,"Articles de sport, loisirs, camping",475
+2017-09-30 00:00:00+00:00,Articles médicaux,161
+2017-09-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",7661
+2017-09-30 00:00:00+00:00,"Bijoux, montres",245
+2017-09-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1102
+2017-09-30 00:00:00+00:00,Divers,471
+2017-09-30 00:00:00+00:00,Instruments de musique,85
+2017-09-30 00:00:00+00:00,"Livres, articles de papéterie",603
+2017-09-30 00:00:00+00:00,Optique,1603
+2017-09-30 00:00:00+00:00,Parapluies,312
+2017-09-30 00:00:00+00:00,Pièces d'identités et papiers personnels,2177
+2017-09-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",3034
+2017-09-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",347
+2017-09-30 00:00:00+00:00,"Vêtements, chaussures",4119
+2017-12-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3372
+2017-12-31 00:00:00+00:00,"Articles d'enfants, de puériculture",244
+2017-12-31 00:00:00+00:00,"Articles de sport, loisirs, camping",217
+2017-12-31 00:00:00+00:00,Articles médicaux,162
+2017-12-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",7849
+2017-12-31 00:00:00+00:00,"Bijoux, montres",233
+2017-12-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1051
+2017-12-31 00:00:00+00:00,Divers,412
+2017-12-31 00:00:00+00:00,Instruments de musique,56
+2017-12-31 00:00:00+00:00,"Livres, articles de papéterie",592
+2017-12-31 00:00:00+00:00,Optique,1216
+2017-12-31 00:00:00+00:00,Parapluies,280
+2017-12-31 00:00:00+00:00,Pièces d'identités et papiers personnels,2083
+2017-12-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2916
+2017-12-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",314
+2017-12-31 00:00:00+00:00,"Vêtements, chaussures",3081
+2018-03-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3305
+2018-03-31 00:00:00+00:00,"Articles d'enfants, de puériculture",256
+2018-03-31 00:00:00+00:00,"Articles de sport, loisirs, camping",213
+2018-03-31 00:00:00+00:00,Articles médicaux,123
+2018-03-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",7576
+2018-03-31 00:00:00+00:00,"Bijoux, montres",212
+2018-03-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1034
+2018-03-31 00:00:00+00:00,Divers,367
+2018-03-31 00:00:00+00:00,Instruments de musique,49
+2018-03-31 00:00:00+00:00,"Livres, articles de papéterie",496
+2018-03-31 00:00:00+00:00,Optique,1025
+2018-03-31 00:00:00+00:00,Parapluies,351
+2018-03-31 00:00:00+00:00,Pièces d'identités et papiers personnels,1895
+2018-03-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2649
+2018-03-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",309
+2018-03-31 00:00:00+00:00,"Vêtements, chaussures",2680
+2018-06-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",2668
+2018-06-30 00:00:00+00:00,"Articles d'enfants, de puériculture",192
+2018-06-30 00:00:00+00:00,"Articles de sport, loisirs, camping",182
+2018-06-30 00:00:00+00:00,Articles médicaux,91
+2018-06-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",5455
+2018-06-30 00:00:00+00:00,"Bijoux, montres",164
+2018-06-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",805
+2018-06-30 00:00:00+00:00,Divers,305
+2018-06-30 00:00:00+00:00,Instruments de musique,45
+2018-06-30 00:00:00+00:00,"Livres, articles de papéterie",406
+2018-06-30 00:00:00+00:00,Optique,1043
+2018-06-30 00:00:00+00:00,Parapluies,188
+2018-06-30 00:00:00+00:00,Pièces d'identités et papiers personnels,1465
+2018-06-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2301
+2018-06-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",286
+2018-06-30 00:00:00+00:00,"Vêtements, chaussures",2869
+2018-09-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3712
+2018-09-30 00:00:00+00:00,"Articles d'enfants, de puériculture",309
+2018-09-30 00:00:00+00:00,"Articles de sport, loisirs, camping",483
+2018-09-30 00:00:00+00:00,Articles médicaux,125
+2018-09-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",7360
+2018-09-30 00:00:00+00:00,"Bijoux, montres",241
+2018-09-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1049
+2018-09-30 00:00:00+00:00,Divers,570
+2018-09-30 00:00:00+00:00,Instruments de musique,68
+2018-09-30 00:00:00+00:00,"Livres, articles de papéterie",488
+2018-09-30 00:00:00+00:00,Optique,1542
+2018-09-30 00:00:00+00:00,Parapluies,108
+2018-09-30 00:00:00+00:00,Pièces d'identités et papiers personnels,1976
+2018-09-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",3270
+2018-09-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",360
+2018-09-30 00:00:00+00:00,"Vêtements, chaussures",3741
+2018-12-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3429
+2018-12-31 00:00:00+00:00,"Articles d'enfants, de puériculture",179
+2018-12-31 00:00:00+00:00,"Articles de sport, loisirs, camping",172
+2018-12-31 00:00:00+00:00,Articles médicaux,98
+2018-12-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",8089
+2018-12-31 00:00:00+00:00,"Bijoux, montres",248
+2018-12-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1043
+2018-12-31 00:00:00+00:00,Divers,464
+2018-12-31 00:00:00+00:00,Instruments de musique,49
+2018-12-31 00:00:00+00:00,"Livres, articles de papéterie",576
+2018-12-31 00:00:00+00:00,Optique,1113
+2018-12-31 00:00:00+00:00,Parapluies,249
+2018-12-31 00:00:00+00:00,Pièces d'identités et papiers personnels,1933
+2018-12-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2759
+2018-12-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",398
+2018-12-31 00:00:00+00:00,"Vêtements, chaussures",3060
+2019-03-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3482
+2019-03-31 00:00:00+00:00,"Articles d'enfants, de puériculture",174
+2019-03-31 00:00:00+00:00,"Articles de sport, loisirs, camping",175
+2019-03-31 00:00:00+00:00,Articles médicaux,89
+2019-03-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",7529
+2019-03-31 00:00:00+00:00,"Bijoux, montres",220
+2019-03-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",995
+2019-03-31 00:00:00+00:00,Divers,402
+2019-03-31 00:00:00+00:00,Instruments de musique,56
+2019-03-31 00:00:00+00:00,"Livres, articles de papéterie",513
+2019-03-31 00:00:00+00:00,Optique,1022
+2019-03-31 00:00:00+00:00,Parapluies,171
+2019-03-31 00:00:00+00:00,Pièces d'identités et papiers personnels,1654
+2019-03-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2414
+2019-03-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",331
+2019-03-31 00:00:00+00:00,"Vêtements, chaussures",2401
+2019-06-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3688
+2019-06-30 00:00:00+00:00,"Articles d'enfants, de puériculture",216
+2019-06-30 00:00:00+00:00,"Articles de sport, loisirs, camping",200
+2019-06-30 00:00:00+00:00,Articles médicaux,103
+2019-06-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",7436
+2019-06-30 00:00:00+00:00,"Bijoux, montres",206
+2019-06-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1014
+2019-06-30 00:00:00+00:00,Divers,507
+2019-06-30 00:00:00+00:00,Instruments de musique,61
+2019-06-30 00:00:00+00:00,"Livres, articles de papéterie",445
+2019-06-30 00:00:00+00:00,Optique,1354
+2019-06-30 00:00:00+00:00,Parapluies,212
+2019-06-30 00:00:00+00:00,Pièces d'identités et papiers personnels,1594
+2019-06-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2681
+2019-06-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",415
+2019-06-30 00:00:00+00:00,"Vêtements, chaussures",3162
+2019-09-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",3723
+2019-09-30 00:00:00+00:00,"Articles d'enfants, de puériculture",309
+2019-09-30 00:00:00+00:00,"Articles de sport, loisirs, camping",430
+2019-09-30 00:00:00+00:00,Articles médicaux,111
+2019-09-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",7715
+2019-09-30 00:00:00+00:00,"Bijoux, montres",201
+2019-09-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",1006
+2019-09-30 00:00:00+00:00,Divers,617
+2019-09-30 00:00:00+00:00,Instruments de musique,84
+2019-09-30 00:00:00+00:00,"Livres, articles de papéterie",438
+2019-09-30 00:00:00+00:00,Optique,1623
+2019-09-30 00:00:00+00:00,Parapluies,112
+2019-09-30 00:00:00+00:00,Pièces d'identités et papiers personnels,1565
+2019-09-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2902
+2019-09-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",423
+2019-09-30 00:00:00+00:00,"Vêtements, chaussures",3822
+2019-12-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",2880
+2019-12-31 00:00:00+00:00,"Articles d'enfants, de puériculture",139
+2019-12-31 00:00:00+00:00,"Articles de sport, loisirs, camping",134
+2019-12-31 00:00:00+00:00,Articles médicaux,77
+2019-12-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",6346
+2019-12-31 00:00:00+00:00,"Bijoux, montres",160
+2019-12-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",778
+2019-12-31 00:00:00+00:00,Divers,445
+2019-12-31 00:00:00+00:00,Instruments de musique,40
+2019-12-31 00:00:00+00:00,"Livres, articles de papéterie",441
+2019-12-31 00:00:00+00:00,Optique,792
+2019-12-31 00:00:00+00:00,Parapluies,255
+2019-12-31 00:00:00+00:00,Pièces d'identités et papiers personnels,1174
+2019-12-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2256
+2019-12-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",275
+2019-12-31 00:00:00+00:00,"Vêtements, chaussures",2064
+2020-03-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",2400
+2020-03-31 00:00:00+00:00,"Articles d'enfants, de puériculture",130
+2020-03-31 00:00:00+00:00,"Articles de sport, loisirs, camping",142
+2020-03-31 00:00:00+00:00,Articles médicaux,64
+2020-03-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",5535
+2020-03-31 00:00:00+00:00,"Bijoux, montres",150
+2020-03-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",664
+2020-03-31 00:00:00+00:00,Divers,337
+2020-03-31 00:00:00+00:00,Instruments de musique,32
+2020-03-31 00:00:00+00:00,"Livres, articles de papéterie",335
+2020-03-31 00:00:00+00:00,Optique,641
+2020-03-31 00:00:00+00:00,Parapluies,197
+2020-03-31 00:00:00+00:00,Pièces d'identités et papiers personnels,1081
+2020-03-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",1786
+2020-03-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",279
+2020-03-31 00:00:00+00:00,"Vêtements, chaussures",1445
+2020-06-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",726
+2020-06-30 00:00:00+00:00,"Articles d'enfants, de puériculture",39
+2020-06-30 00:00:00+00:00,"Articles de sport, loisirs, camping",56
+2020-06-30 00:00:00+00:00,Articles médicaux,31
+2020-06-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",1338
+2020-06-30 00:00:00+00:00,"Bijoux, montres",35
+2020-06-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",236
+2020-06-30 00:00:00+00:00,Divers,97
+2020-06-30 00:00:00+00:00,Instruments de musique,11
+2020-06-30 00:00:00+00:00,"Livres, articles de papéterie",69
+2020-06-30 00:00:00+00:00,Optique,254
+2020-06-30 00:00:00+00:00,Parapluies,43
+2020-06-30 00:00:00+00:00,Pièces d'identités et papiers personnels,405
+2020-06-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",654
+2020-06-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",124
+2020-06-30 00:00:00+00:00,"Vêtements, chaussures",535
+2020-09-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",2461
+2020-09-30 00:00:00+00:00,"Articles d'enfants, de puériculture",189
+2020-09-30 00:00:00+00:00,"Articles de sport, loisirs, camping",385
+2020-09-30 00:00:00+00:00,Articles médicaux,78
+2020-09-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",4941
+2020-09-30 00:00:00+00:00,"Bijoux, montres",168
+2020-09-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",660
+2020-09-30 00:00:00+00:00,Divers,364
+2020-09-30 00:00:00+00:00,Instruments de musique,66
+2020-09-30 00:00:00+00:00,"Livres, articles de papéterie",264
+2020-09-30 00:00:00+00:00,Optique,954
+2020-09-30 00:00:00+00:00,Parapluies,64
+2020-09-30 00:00:00+00:00,Pièces d'identités et papiers personnels,1174
+2020-09-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2201
+2020-09-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",388
+2020-09-30 00:00:00+00:00,"Vêtements, chaussures",2129
+2020-12-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",1759
+2020-12-31 00:00:00+00:00,"Articles d'enfants, de puériculture",96
+2020-12-31 00:00:00+00:00,"Articles de sport, loisirs, camping",96
+2020-12-31 00:00:00+00:00,Articles médicaux,54
+2020-12-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",3943
+2020-12-31 00:00:00+00:00,"Bijoux, montres",74
+2020-12-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",440
+2020-12-31 00:00:00+00:00,Divers,258
+2020-12-31 00:00:00+00:00,Instruments de musique,56
+2020-12-31 00:00:00+00:00,"Livres, articles de papéterie",159
+2020-12-31 00:00:00+00:00,Optique,498
+2020-12-31 00:00:00+00:00,Parapluies,130
+2020-12-31 00:00:00+00:00,Pièces d'identités et papiers personnels,820
+2020-12-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",1391
+2020-12-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",244
+2020-12-31 00:00:00+00:00,"Vêtements, chaussures",972
+2021-03-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",2041
+2021-03-31 00:00:00+00:00,"Articles d'enfants, de puériculture",116
+2021-03-31 00:00:00+00:00,"Articles de sport, loisirs, camping",124
+2021-03-31 00:00:00+00:00,Articles médicaux,53
+2021-03-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",4292
+2021-03-31 00:00:00+00:00,"Bijoux, montres",89
+2021-03-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",497
+2021-03-31 00:00:00+00:00,Divers,255
+2021-03-31 00:00:00+00:00,Instruments de musique,28
+2021-03-31 00:00:00+00:00,"Livres, articles de papéterie",196
+2021-03-31 00:00:00+00:00,Optique,595
+2021-03-31 00:00:00+00:00,Parapluies,106
+2021-03-31 00:00:00+00:00,Pièces d'identités et papiers personnels,766
+2021-03-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",1459
+2021-03-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",226
+2021-03-31 00:00:00+00:00,"Vêtements, chaussures",905
+2021-06-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",2198
+2021-06-30 00:00:00+00:00,"Articles d'enfants, de puériculture",111
+2021-06-30 00:00:00+00:00,"Articles de sport, loisirs, camping",132
+2021-06-30 00:00:00+00:00,Articles médicaux,70
+2021-06-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",4136
+2021-06-30 00:00:00+00:00,"Bijoux, montres",104
+2021-06-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",515
+2021-06-30 00:00:00+00:00,Divers,298
+2021-06-30 00:00:00+00:00,Instruments de musique,46
+2021-06-30 00:00:00+00:00,"Livres, articles de papéterie",226
+2021-06-30 00:00:00+00:00,Optique,665
+2021-06-30 00:00:00+00:00,Parapluies,92
+2021-06-30 00:00:00+00:00,Pièces d'identités et papiers personnels,853
+2021-06-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",1666
+2021-06-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",382
+2021-06-30 00:00:00+00:00,"Vêtements, chaussures",1372
+2021-09-30 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",2851
+2021-09-30 00:00:00+00:00,"Articles d'enfants, de puériculture",228
+2021-09-30 00:00:00+00:00,"Articles de sport, loisirs, camping",408
+2021-09-30 00:00:00+00:00,Articles médicaux,93
+2021-09-30 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",6313
+2021-09-30 00:00:00+00:00,"Bijoux, montres",182
+2021-09-30 00:00:00+00:00,"Clés, porte-clés, badge magnétique",649
+2021-09-30 00:00:00+00:00,Divers,473
+2021-09-30 00:00:00+00:00,Instruments de musique,69
+2021-09-30 00:00:00+00:00,"Livres, articles de papéterie",271
+2021-09-30 00:00:00+00:00,Optique,967
+2021-09-30 00:00:00+00:00,Parapluies,136
+2021-09-30 00:00:00+00:00,Pièces d'identités et papiers personnels,1197
+2021-09-30 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2369
+2021-09-30 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",470
+2021-09-30 00:00:00+00:00,"Vêtements, chaussures",2745
+2021-12-31 00:00:00+00:00,"Appareils électroniques, informatiques, appareils photo",2881
+2021-12-31 00:00:00+00:00,"Articles d'enfants, de puériculture",192
+2021-12-31 00:00:00+00:00,"Articles de sport, loisirs, camping",144
+2021-12-31 00:00:00+00:00,Articles médicaux,94
+2021-12-31 00:00:00+00:00,"Bagagerie: sacs, valises, cartables",6866
+2021-12-31 00:00:00+00:00,"Bijoux, montres",171
+2021-12-31 00:00:00+00:00,"Clés, porte-clés, badge magnétique",627
+2021-12-31 00:00:00+00:00,Divers,404
+2021-12-31 00:00:00+00:00,Instruments de musique,52
+2021-12-31 00:00:00+00:00,"Livres, articles de papéterie",300
+2021-12-31 00:00:00+00:00,Optique,758
+2021-12-31 00:00:00+00:00,Parapluies,156
+2021-12-31 00:00:00+00:00,Pièces d'identités et papiers personnels,1046
+2021-12-31 00:00:00+00:00,"Porte-monnaie / portefeuille, argent, titres",2128
+2021-12-31 00:00:00+00:00,"Vélos, trottinettes, accessoires 2 roues",380
+2021-12-31 00:00:00+00:00,"Vêtements, chaussures",1735
