@@ -10,6 +10,9 @@ import pandas as pd
 from datetime import datetime
 from datetime import timedelta
 from dateutil.relativedelta import relativedelta
+
+import plotly.express as px
+import plotly.graph_objects as go
 ##########################################
 ##########################################
 
@@ -34,8 +37,13 @@ geo = json.load(open("GEOJSON/regions.geojson")) # lire les données
 
 choice = st.selectbox('Search by :',('day', 'week', 'quarter', 'month', 'year'))
 
+
 df_weather_by_choice = pd.read_csv(f"CSV/weather_by_dep_by_{choice}.csv")
 objet_region_by_choice = pd.read_csv(f'CSV/objects_by_region_by_{choice}.csv')
+df_choice_total = pd.read_csv(f'CSV/df_{choice}_total.csv')
+df_choice_by_type = pd.read_csv(f'CSV/df_{choice}_by_type.csv')
+
+st.write(f'CSV/df_{choice}_by_type.csv')
 
 df_departements_weather_by_choice_lat_mean = df_weather_by_choice['lat'].mean()
 df_departements_weather_by_choice_long_mean = df_weather_by_choice['long'].mean()
@@ -130,15 +138,28 @@ col1, col2 = st.columns(2)
 
 
 
+fig = go.Figure(data=[go.Histogram(nbinsx=20,x=df_choice_total.nb_objets)]).update_layout(
+    xaxis_title="N of found aobjects", yaxis_title=f"{choice} from 2016 to 2021", title=go.layout.Title(text=f"Sum of lost items per {choice}")
+)
 
 
+fig1 = go.Figure(data=[go.Line(x=df_choice_total.date, y = df_choice_total.nb_objets)]).update_layout(
+    xaxis_title=f"{choice} from 2016 to 2021", yaxis_title="N of found aobjects", title=go.layout.Title(text=f"Sum of lost items per {choice}")
+)
 
 with col1:
+    
+    st.plotly_chart(fig, use_container_width=True)
     st_folium(hm, width=700, height=450)
 
+
 with col2:
-    st_folium(m, width=700, height=450)#, width=700, height=450)
+    
+    st.plotly_chart(fig1, use_container_width=True)
+    st_folium(m, width=700, height=450)
 
 
 
 
+fig2 = px.line(df_choice_by_type, x=df_choice_by_type.index, y='nb_objets', color='type', hover_name="type")
+st.plotly_chart(fig2, use_container_width=True)
