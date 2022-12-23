@@ -13,37 +13,154 @@ from dateutil.relativedelta import relativedelta
 
 import plotly.express as px
 import plotly.graph_objects as go
+
+from PIL import Image
+from millify import millify
+import fonctions
+
+import numpy as np
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
+import random
+
+import scipy.stats
 ##########################################
 ##########################################
 
 
-st.set_page_config(page_icon=":movie_camera:",
+st.set_page_config(page_icon=":bar_chart:",
                 layout="wide")
 
 
 
 #########################################
 #########################################
-
 objects_par_regions = pd.read_csv('CSV/objects_par_region.csv')
-
-
-geo = json.load(open("GEOJSON/regions.geojson")) # lire les données 
+geo = json.load(open("GEOJSON/regions.geojson")) # lire les données
 
 #########################################
 #########################################
+def make_grid(cols,rows):
+    grid = [0]*cols
+    for i in range(cols):
+        with st.container():
+            grid[i] = st.columns(rows)
+    return grid
 
+mygrid0 = make_grid(1,6)
+image = Image.open("Simplon.png")
+new_image = image.resize((100, 100))
+mygrid0[0][0].image(new_image)
+mygrid0[0][5].image("sncf.png")
+
+
+mygrid1 = make_grid(1,3)
+
+mygrid1[0][1].markdown('## Projet : Lost in translation')
+# mygrid1[0][1].markdown("###### Requêtes d'API, stockage en SQL, Folium, Plotly, Streamlit et Statistiques")
+with mygrid1[0][1]:
+    with st.expander("Contexte du projet"):
+        st.markdown(r"""
+        Data Scientist à la SNCF, votre manager vous demande de vous pencher sur un sujet particulier, la gestion des objets perdus.
+
+En effet, chaque jour des dizaines d'objets sont perdus partout en France par les voyageurs, leur gestion est critique au niveau de la satisfaction client. Cependant le cout de leur gestion est critique également. On aimerait donc dimensionner au mieux le service en charge de les gérer mais pour cela il faut pouvoir anticiper de manière précise le volume d'objets perdus chaque jour. Votre manager a une intuition qu'il aimerait vérifier: plus il fait froid plus les voyageurs sont chargés (manteau, écharppes, gant) plus ils ont donc de probabilité de les oublier. Mais empiler toutes ces couches prend du temps, ce qui pousse aussi à se mettre en retard et dans la précipitation, à oublier d'autres affaires encore. A l'aide des données de la SNCF et d'autres données, essayez de creuser cette piste.
+
+++A partir de l'API open data de la sncf.++
+
+Requeter la base de données des objets trouvés pour récupérer les données entre 2016 et 2021
+- Bonus: écrivez un brief permettant d'alimenter chaque jour votre BDD avec les nouvelles données.
+
+++A partir d'internet:++
+
+Récupérer la liste des températures journalières par ville en France entre 2016 et 2021.
+++Data analyse VISUALISATION. - (Sur un streamlit)++
+
+Calculez entre 2016 et 2021 la somme du nombre d'objets perdus par semaine. Afficher sur un histogramme la répartition de ces valeurs. (un point correspond à une semaine dont la valeur est la somme).
+
+Afficher l'évolution du nombre d'objets perdus à l'aide d'un plotly sur la période 2016-2021. On peut choisir d'afficher ou non certains types d'objet.
+
+Afficher une carte de France avec le nombre d'objets perdus en fonction de la fréquentation de voyageur de chaque région. Possibilité de faire varier par année et par type d'objets
+
+++Partie data analyse en vue de la DATA SCIENCE. - (sur un notebook)++
+
+Afficher le nombre d'objets perdus en fonction de la température sur un scatterplot Est ce que le nombre d'objets perdus est corrélé à la temperature?
+
+Quelle est la médiane du nombre d'objets perdus en fonction de la saison?
+
+Représenter cette information à l'aide d'un Boxplot. Est ce que le nombre d'objets perdus est corrélé à la saison?
+
+Est ce que le type d'objet perdu est corrélé au mois?
+    """)
 
 
 choice = st.selectbox('Search by :',('day', 'week', 'quarter', 'month', 'year'))
 
 
+
+
 df_weather_by_choice = pd.read_csv(f"CSV/weather_by_dep_by_{choice}.csv")
-objet_region_by_choice = pd.read_csv(f'CSV/objects_by_region_by_{choice}.csv')
 df_choice_total = pd.read_csv(f'CSV/df_{choice}_total.csv')
 df_choice_by_type = pd.read_csv(f'CSV/df_{choice}_by_type.csv')
 
-st.write(f'CSV/df_{choice}_by_type.csv')
+if choice in ['day', 'week']:
+    objet_region_by_choice = pd.read_csv(f'CSV/objects_by_region_by_{choice}.csv')
+else :
+    objet_region_by_choice = pd.read_csv(f'CSV/objects_by_region_by_{choice}.csv')
+    
+
+mygrid2 = make_grid(1,6)
+with mygrid2[0][0]:
+    st.metric("Lost items", millify(df_choice_total.nb_objets.sum(), precision=2))
+
+
+with mygrid2[0][1]:
+    st.metric(f"Max lost items by {choice} :", millify(df_choice_total.sort_values('nb_objets', ascending=False).iloc[0,1], precision=2))
+with mygrid2[0][1]:
+    date = str(df_choice_total.sort_values('nb_objets', ascending=False).iloc[0,0]).split(' ',1)[0]
+    if choice == 'year':
+        st.write(f"In {choice} : {date.split('-', 2)[0]}")
+    elif choice == 'month':
+        st.write(f"In {choice} : {date.split('-', 2)[1]}")
+    else :
+        st.write(f"In {date}") 
+
+
+with mygrid2[0][2]:
+    st.metric(f"Min lost items by {choice} :", millify(df_choice_total.sort_values('nb_objets', ascending=True).iloc[0,1], precision=2))
+with mygrid2[0][2]:
+    date = str(df_choice_total.sort_values('nb_objets', ascending=True).iloc[0,0]).split(' ',1)[0]
+    if choice == 'year':
+        st.write(f"In {choice} : {date.split('-', 2)[0]}")
+    elif choice == 'month':
+        st.write(f"In {choice} : {date.split('-', 2)[1]}")
+    else :
+        st.write(f"In {date}") 
+
+with mygrid2[0][3]:
+    st.metric(f"Max temperature by {choice} :", str(round(df_weather_by_choice.sort_values('tc', ascending=False).iloc[0,5],2))+" c")
+with mygrid2[0][3]:
+    date = str(df_weather_by_choice.sort_values('tc', ascending=False).iloc[0,2]).split(' ',1)[0]
+    if choice == 'year':
+        st.write(f"In {choice} : {date.split('-', 2)[0]}")
+    elif choice == 'month':
+        st.write(f"In {choice} : {date.split('-', 2)[1]}")
+    else :
+        st.write(f"In {date}") 
+
+with mygrid2[0][4]:
+    st.metric(f"Min temperature by {choice} :", str(round(df_weather_by_choice.sort_values('tc', ascending=True).iloc[0,5],2))+" c")
+with mygrid2[0][4]:
+    date = str(df_weather_by_choice.sort_values('tc', ascending=True).iloc[0,2]).split(' ',1)[0]
+    if choice == 'year':
+        st.write(f"In {choice} : {date.split('-', 2)[0]}")
+    elif choice == 'month':
+        st.write(f"In {choice} : {date.split('-', 2)[1]}")
+    else :
+        st.write(f"In {date}") 
+
+
+with mygrid2[0][5]:
+    st.metric(f"Average temperature by {choice} :", str(round(df_weather_by_choice.tc.mean(),2))+" c")
 
 df_departements_weather_by_choice_lat_mean = df_weather_by_choice['lat'].mean()
 df_departements_weather_by_choice_long_mean = df_weather_by_choice['long'].mean()
@@ -53,14 +170,12 @@ df_departements_weather_by_choice_long_mean = df_weather_by_choice['long'].mean(
 
 
 
-
-
 options_dates = df_weather_by_choice['date'].unique()
 choosed_time = st.select_slider(
     f"Choose your {choice}",
     options=options_dates)
 
-st.write(choosed_time)
+st.write(f'Choosed_time : {choosed_time}')
 
 
 #########################################
@@ -134,32 +249,66 @@ HeatMap(df_departements_weather_by_choice,
 
 
 
-col1, col2 = st.columns(2)
 
-
-
-fig = go.Figure(data=[go.Histogram(nbinsx=20,x=df_choice_total.nb_objets)]).update_layout(
-    xaxis_title="N of found aobjects", yaxis_title=f"{choice} from 2016 to 2021", title=go.layout.Title(text=f"Sum of lost items per {choice}")
-)
-
-
-fig1 = go.Figure(data=[go.Line(x=df_choice_total.date, y = df_choice_total.nb_objets)]).update_layout(
-    xaxis_title=f"{choice} from 2016 to 2021", yaxis_title="N of found aobjects", title=go.layout.Title(text=f"Sum of lost items per {choice}")
-)
-
-with col1:
+with st.expander('\U0001F4CA Histogram and line plots graphics'):
     
-    st.plotly_chart(fig, use_container_width=True)
-    st_folium(hm, width=700, height=450)
+    col1, col2 = st.columns(2)
 
 
-with col2:
+
+    fig = go.Figure(data=[go.Histogram(nbinsx=20,x=df_choice_total.nb_objets)]).update_layout(
+        xaxis_title="N of found aobjects", yaxis_title=f"{choice} from 2016 to 2021", title=go.layout.Title(text=f"Sum of lost items per {choice}")
+    )
+
+
+    fig1 = go.Figure(data=[go.Line(x=df_choice_total.date, y = df_choice_total.nb_objets)]).update_layout(
+        xaxis_title=f"{choice} from 2016 to 2021", yaxis_title="N of found aobjects", title=go.layout.Title(text=f"Sum of lost items per {choice}")
+    )
+    with col1:
+        
+        st.plotly_chart(fig, use_container_width=True)
+
+        
+    with col2:
+        
+        st.plotly_chart(fig1, use_container_width=True)
+
+    fig2 = px.line(df_choice_by_type, x=df_choice_by_type.index, y='nb_objets', color='type', hover_name="type")
+    st.plotly_chart(fig2, use_container_width=True)
+
+
+with st.expander('\U0001F30D Folium maps'):
+    col3, col4 = st.columns(2)
+    with col3:
+        st_folium(hm, width=700, height=450)
+
+    with col4:
+        st_folium(m, width=700, height=450)
+        if choice in ['day', 'week']:
+            st.warning('Attention : Brut values presented in this map')
+
+
+with st.expander('\U0001F30D Statistics'):
+    x = np.arange(10, 20)
+    y = np.array([2, 1, 4, 5, 8, 12, 18, 25, 96, 48])
+    r_pearson = scipy.stats.pearsonr(x, y)    # Pearson's r
+    r_Spearman = scipy.stats.spearmanr(x, y)   # Spearman's rho
+    r_Kendall = scipy.stats.kendalltau(x, y)  # Kendall's tau
+    if (r_pearson[0] > 0) or (r_Spearman[0] > 0) or  (r_Kendall[0] > 0) :
+        signe = "positive"  
+    st.markdown(""" # Correlation $$r(x,y) $$ """)
+    st.markdown(f"`Pearson` Correlation $$r$$ = {round(r_pearson[0],2)} with p_value = {round(r_pearson[1],6)}")
+    st.markdown(f"`Spearman` Correlation $$r$$= {round(r_Spearman[0],2)} with p_value = {round(r_Spearman[1],6)}")
+    st.markdown(f"`Kendall` Correlation $$r$$ = {round(r_Kendall[0],2)} with p_value = {round(r_Kendall[1],6)}")
+
+    st.markdown(""" ### Test correlation (Pearson test)""")
+    corr_test = fonctions.pearsonr_ci(x,y,0.05)
+    st.write('Pearson test')
+    st.write(f"r = {corr_test[0]}")
+    st.write(f"p_value = {corr_test[1]}")
+    st.write(f"lo_z = {corr_test[2]}")
+    st.write(f"hi_z = {corr_test[3]}")
     
-    st.plotly_chart(fig1, use_container_width=True)
-    st_folium(m, width=700, height=450)
+    # st.markdown(f"Since the correlation coefficient is close to 1, this tells us that there is a strong {signe} association between the two variables.")
+    # st.markdown('And since the corresponding p-value is less than .05, we conclude that there is a statistically significant association between the two variables.')
 
-
-
-
-fig2 = px.line(df_choice_by_type, x=df_choice_by_type.index, y='nb_objets', color='type', hover_name="type")
-st.plotly_chart(fig2, use_container_width=True)
