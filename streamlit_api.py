@@ -16,6 +16,14 @@ import plotly.graph_objects as go
 
 from PIL import Image
 from millify import millify
+import fonctions
+
+import numpy as np
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
+import random
+
+import scipy.stats
 ##########################################
 ##########################################
 
@@ -278,3 +286,29 @@ with st.expander('\U0001F30D Folium maps'):
         st_folium(m, width=700, height=450)
         if choice in ['day', 'week']:
             st.warning('Attention : Brut values presented in this map')
+
+
+with st.expander('\U0001F30D Statistics'):
+    x = np.arange(10, 20)
+    y = np.array([2, 1, 4, 5, 8, 12, 18, 25, 96, 48])
+    r_pearson = scipy.stats.pearsonr(x, y)    # Pearson's r
+    r_Spearman = scipy.stats.spearmanr(x, y)   # Spearman's rho
+    r_Kendall = scipy.stats.kendalltau(x, y)  # Kendall's tau
+    if (r_pearson[0] > 0) or (r_Spearman[0] > 0) or  (r_Kendall[0] > 0) :
+        signe = "positive"  
+    st.markdown(""" # Correlation $$r(x,y) $$ """)
+    st.markdown(f"`Pearson` Correlation $$r$$ = {round(r_pearson[0],2)} with p_value = {round(r_pearson[1],6)}")
+    st.markdown(f"`Spearman` Correlation $$r$$= {round(r_Spearman[0],2)} with p_value = {round(r_Spearman[1],6)}")
+    st.markdown(f"`Kendall` Correlation $$r$$ = {round(r_Kendall[0],2)} with p_value = {round(r_Kendall[1],6)}")
+
+    st.markdown(""" ### Test correlation (Pearson test)""")
+    corr_test = fonctions.pearsonr_ci(x,y,0.05)
+    st.write('Pearson test')
+    st.write(f"r = {corr_test[0]}")
+    st.write(f"p_value = {corr_test[1]}")
+    st.write(f"lo_z = {corr_test[2]}")
+    st.write(f"hi_z = {corr_test[3]}")
+    
+    # st.markdown(f"Since the correlation coefficient is close to 1, this tells us that there is a strong {signe} association between the two variables.")
+    # st.markdown('And since the corresponding p-value is less than .05, we conclude that there is a statistically significant association between the two variables.')
+
