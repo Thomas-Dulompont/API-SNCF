@@ -1,0 +1,12 @@
+folium
+matplotlib
+millify
+numpy
+pandas
+Pillow
+plotly
+python_dateutil
+scipy
+statsmodels
+streamlit
+streamlit_folium
